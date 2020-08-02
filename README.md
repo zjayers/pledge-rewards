@@ -1,17 +1,16 @@
 <h1 align="center">Welcome to kickstarter-rewards-service 👋</h1>
 <p>
   <img alt="Version" src="https://img.shields.io/badge/version-1.0.0-blue.svg?cacheSeconds=2592000" />
-  <img src="https://img.shields.io/badge/node-%3E%3D12.16.3-blue.svg" />
   <img src="https://img.shields.io/badge/npm-%3E%3D6.14.5-blue.svg" />
-  <img src="https://img.shields.io/badge/yarn-%3E%3D1.22.4-blue.svg" />
-  <a href="https://github.com/team-iroh/pledge-rewards#readme" target="_blank">
+  <img src="https://img.shields.io/badge/node-%3E%3D12.16.3-blue.svg" />
+  <a href="https://team-iroh.github.io/pledge-rewards/index.html" target="_blank">
     <img alt="Documentation" src="https://img.shields.io/badge/documentation-yes-brightgreen.svg" />
   </a>
   <a href="https://github.com/team-iroh/pledge-rewards/graphs/commit-activity" target="_blank">
     <img alt="Maintenance" src="https://img.shields.io/badge/Maintained%3F-yes-green.svg" />
   </a>
   <a href="https://github.com/team-iroh/pledge-rewards/blob/master/LICENSE" target="_blank">
-    <img alt="License: ISC" src="https://img.shields.io/github/license/team-iroh/kickstarter-rewards-service" />
+    <img alt="License: ISC" src="https://img.shields.io/github/license/zjayers/kickstarter-rewards-service" />
   </a>
 </p>
 
@@ -19,31 +18,61 @@
 
 ### 🏠 [Homepage](https://github.com/team-iroh/pledge-rewards#readme)
 
+## Server Documentation
+https://team-iroh.github.io/pledge-rewards/index.html
+
+## API Documentation
+### /api/projects
+https://documenter.getpostman.com/view/11644172/SzzkcH2w?version=latest
+
+### /api/rewards
+https://documenter.getpostman.com/view/11644172/SzzkcHBk?version=latest
+
 ## Prerequisites
 
-- node >=12.16.3
 - npm >=6.14.5
-- yarn >=1.22.4
+- node >=12.16.3
 
-## Author
+## Mounting Points in index.html
+- Rewards module mounts to the div with id of 'rewards'
+- Rewards modal window mounts to the div with id of 'modal-root'
+```html
+<div id="rewards"></div>
+<div id="modal-root"></div>
+```
 
-👤 **Zach Ayers**
+## Install
 
-- Github: [@team-iroh](https://github.com/team-iroh)
+```sh
+npm install
+```
 
-## 🤝 Contributing
+## Build
 
-Contributions, issues and feature requests are welcome!<br />Feel free to check [issues page](https://github.com/team-iroh/pledge-rewards/issues). You can also take a look at the [contributing guide](https://github.com/team-iroh/pledge-rewards/blob/master/CONTRIBUTING.md).
+```sh
+npm run build
+```
 
-## Show your support
+## Usage - Start & Seed Database
 
-Give a ⭐️ if this project helped you!
+```sh
+npm run start:database
+```
 
-## 📝 License
+## Usage - Start WITHOUT Seeding Database
 
-Copyright © 2020 [Zach Ayers](https://github.com/team-iroh).<br />
-This project is [ISC](https://github.com/team-iroh/pledge-rewards/blob/master/LICENSE) licensed.
+```sh
+npm run start
+```
 
----
+## Usage - Seed Database Script
 
-_This README was generated with ❤️ by [readme-md-generator](https://github.com/kefranabg/readme-md-generator)_
+```sh
+npm run seed:database
+```
+
+## Run tests
+
+```sh
+npm run test
+```

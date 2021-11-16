@@ -20,7 +20,7 @@
     "test:watch": "env DEBUG=off NODE_ENV=test DATABASE_NAME=kstart_test mocha src/spec/**/*.js --watch"
   },
   "dependencies": {
-    "aws-sdk": "^2.703.0",
+    "aws-sdk": "^2.814.0",
     "axios": "^0.19.2",
     "commander": "^5.1.0",
     "cors": "^2.8.5",
